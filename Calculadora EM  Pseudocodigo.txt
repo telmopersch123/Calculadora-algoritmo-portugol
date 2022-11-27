@@ -1,0 +1,432 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 05/02/2022
+// Seção de Declarações
+var
+vett: vetor[1..1000] de real
+vet: vetor [1..1000] de real
+Sim,eae,aa: caractere
+f, col , yes: inteiro
+b,n,b2, impar, par,primo, cot,c,cc,a,D,y,expo: inteiro
+s, r, raiz,ra,expoente : real
+procedimento continua()
+inicio
+ESCOLHA Col
+Caso 1
+   se(yes=0) entao
+   fimse
+   repita
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Subtração}")
+   escreval()
+   escreval("       Subtraindo....              ")
+   escreval()
+   escreva("                              ")
+   leia(B)
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Subtração}")
+   escreval()
+   escreval("       Subtraindo....              ")
+   escreval()
+   escreva("                            ",b," - ")
+   leia(C)
+   limpatela
+   escreval()
+   R <- B - C
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE USOU FOI A {Subtração}")
+   escreval()
+   escreval("       Subtraido")
+   escreval()
+   escreval("                            ",b," -", c)
+   escreval()
+   escreval("                         Resultado: ",  R)
+   escreval()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1
+   se (yes >= 1) entao
+   fimse
+Caso 2
+    repita
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Adição}")
+   escreval()
+   escreval("       Adicionando....              ")
+   escreval()
+   escreva("                              ")
+   leia(B)
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Adição}")
+   escreval()
+   escreval("       Adicionando....              ")
+   escreval()
+   escreva("                            ",b," + ")
+   leia(C)
+   limpatela
+   escreval()
+   R <- B + C
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE USOU FOI A {Adição}")
+   escreval()
+   escreval("       Adicionado")
+   escreval()
+   escreval("                            ",b," +", c)
+   escreval()
+   escreval()
+   escreval("                         Resultado: ",  R)
+   escreval()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1
+   se (yes >= 1) entao
+   fimse
+Caso 3
+   repita
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Multiplicação}")
+   escreval()
+   escreval("       Multiplicando....              ")
+   escreval()
+   escreva("                              ")
+   leia(B)
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Multiplicação}")
+   escreval()
+   escreval("       Multiplicando....              ")
+   escreval()
+   escreva("                            ",b," X ")
+   leia(C)
+   limpatela
+   escreval()
+   R <- B * C
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE USOU FOI A {Multiplicação}")
+   escreval()
+   escreval("       Multiplicado")
+   escreval()
+   escreval("                            ",b," X", c)
+   escreval()
+   escreval()
+   escreval("                         Resultado: ",  R)
+   escreval()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1
+   se (yes >= 1) entao
+   fimse
+Caso 4
+     repita
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Divisão}")
+   escreval()
+   escreval("       Dividindo....              ")
+   escreval()
+   escreva("                              ")
+   leia(B)
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE VAI USAR É {Divisão}")
+   escreval()
+   escreval("       Dividindo....              ")
+   escreval()
+   escreva("                            ",b," / ")
+   leia(C)
+   limpatela
+   escreval()
+   R <- B / C
+   limpatela
+   escreval()
+   escreval("          METODO DE CALCULO QUE VOCE USOU FOI A {Divisão}")
+   escreval()
+   escreval("       Dividido")
+   escreval()
+   escreval("                            ",b," /", c)
+   escreval()
+   escreval()
+   escreval("                         Resultado: ",  R)
+   escreval()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1
+   se (yes >= 1) entao
+   fimse
+Caso 5
+   se yes = 0 entao
+   fimse
+   repita
+   limpatela
+   escreval("          METODO DE CALCULO QUE VOCÊ VAI USAR É (Fatoração)")
+   escreval()
+   escreva("       Fatorial de: ")
+   leia(b)
+   c <- 1
+   b2 <- b
+   enquanto b2 >= 1 faca
+   c <- c * b2
+   b2 <- b2 - 1
+   fimenquanto
+   limpatela
+   escreval("          METODO DE CALCULO QUE VOCÊ USOU FOI A (Fatoração)")
+   escreval()
+   escreval()
+   escreval("                      Fatorial de ",b," é ", c)
+   ESCREVAL()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1 entao
+   se yes >= 1 entao
+   fimse
+Caso 6
+   repita
+   escreval()
+   LimpaTela
+   escreval("      METODO DE CALCULO QUE VOCê VAI USAR É (RAIZ QUADRADA)")
+   escreval()
+   escreva("       Raiz Quadrada de: ")
+   leia(ra)
+   raiz <- 0
+   repita
+   raiz <- raiz + 1
+   ate raiz * raiz > ra
+   raiz <- raiz - 1
+   limpatela
+   escreval("      METODO DE CALCULO QUE VOCÊ USOU FOI A (RAIZ QUADRADA)")
+   escreval("               ATENÇÃO EXISTE RAIZES NÃO EXATAS")
+   ESCREVAL("             POR ESSE MOTIVO O PROGRAMA NÃO IRÁ")
+   ESCREVAL("  MOSTRAR AS OUTRAS CASA DECIMAIS, SOMENTE O NUMERO INTEIRO")
+   escreval()
+   escreval()
+   escreval("                      Raiz de ",ra," é ", raiz)
+   ESCREVAL()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1 entao
+   se yes >= 1 entao
+   fimse
+Caso 7
+   repita
+   escreval()
+   LimpaTela
+   escreval("      METODO DE CALCULO QUE VOCê VAI USAR É (Exponenciação)")
+   escreval()
+   escreva("                        Expoente de: ")
+   leia(b)
+   escreval("                  Quantas vezes deseja Elevar?")
+   escreva("                                ")
+   leia(expo)
+   expoente <- b ^ expo
+   limpatela
+   escreval("      METODO DE CALCULO QUE VOCÊ USOU FOI A (Exponenciação)")
+   escreval()
+   escreval("                Expoente de ",b," elevado a ",expo," é ",expoente)
+   ESCREVAL()
+   escrevaL("                Continuar Adicionando [APERTE {0}]")
+   escreva("                                ")
+   leia(yes)
+   ate yes >= 1 entao
+   se yes >= 1 entao
+   fimse
+Caso 8
+   repita
+   limpatela
+   escreval("---------------------(Analisador de Numeros)----------------------")
+   escreval("       Digite o numero a ser analisado pelo algoritmo")
+   escreva("                              ")
+   leia(b)
+   escreval("                 Numero Escolhido [",b,"]")
+   escreval()
+   se b%2=0 entao
+   escreval()
+   escreval("  É um numero Par")
+   senao
+   se b%2=1 entao
+   escreval()
+   escreval("  É um numero Impar")
+   fimse
+   fimse
+    primoo()
+   escreval("             Continuar Fatorando [APERTE {0}]")
+   escreval()
+   escreva("")
+   leia(yes)
+   ate yes >= 1
+   se yes >= 1 entao
+   fimse
+fimescolha
+fimprocedimento
+procedimento primoo()
+inicio
+   c <- 1
+   primo <- 0
+   repita
+   se b%c=0 entao
+   primo <- primo + 1
+   fimse
+   c <- c + 1
+   ate c > b
+   se primo = 1 entao
+   escreval()
+   escreval("  E NÃO é numero Primo")
+   senao
+   fimse
+   se primo > 2 entao
+   escreval()
+   escreval("  E NÃO é um numero Primo")
+   senao
+   fimse
+   se (primo > 1) e (primo < 3) entao
+   escreval()
+   escreval("  E também é um numero Primo")
+   senao
+   fimse
+   c <- primo
+   D <- 1
+   para D de D ate B faca
+   se B % D = 0 entao
+   y <- y + 1
+   vet[D] <- D
+   fimse
+   fimpara
+   escreval()
+   escreval("  E os numeros divisiveis por ",b," de 1 ate ",b," é:")
+   para D de 1 ate B faca
+   se vet[D] <> 0 entao
+   escreva("..",vet[D])
+   fimse
+   fimpara
+   escreval()
+   escreval("  Que ao todo são [",y,"]")
+   escreval()
+   D <- B
+   para D de B ate 100 faca
+   se D % B = 0 entao
+   y <- y + 1
+   vett[D] <- D
+   fimse
+   fimpara
+   escreval("  E os numeros divisiveis por ",B," até 100 é: ")
+   para D de B ate 100 faca
+   se vett[D] <> 0 entao
+   escreva(".",vett[D])
+   fimse
+   fimpara
+   escreval()
+   escreval("  Que ao todo são [", y,"]")
+fimprocedimento
+procedimento inicis()
+inicio
+se yes >=1 entao
+fimse
+repita
+limpatela
+escreval()
+escreval("                              Ativa:")
+escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨=====================¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+escreval("                       +-^ :CALCULADORA :=/%                                  ")
+escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨=====================¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+escreval()
+escreval("                       [0] Desligar")
+escreval("                   -----------------------")
+escreval("                       [1] Subtração")
+escreval("                       [2] Adição")
+escreval("                       [3] Multiplição")
+escreval("                       [4] Divisão")
+escreval("                       [5] Fatoração")
+escreval("                       [6] Raiz Quadrada")
+escreval("                       [7] Exponenciação")
+escreval("                       [8] Analisador de Numeros")
+leia(col)
+continua()
+ate col = 0
+se col = 0 entao
+repita
+limpatela
+escreval()
+escreval("                              Inativa:")
+escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨=====================¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+escreval("                       +-^ :CALCULADORA :=/%                                  ")
+escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨=====================¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+escreval()
+escreval("                       [0] Desligar")
+escreval("                   -----------------------")
+escreval("                       [1] Subtração")
+escreval("                       [2] Adição")
+escreval("                       [3] Multiplição")
+escreval("                       [4] Divisão")
+escreval("                       [5] Fatoração")
+escreval("                       [6] Raiz Quadrada")
+escreval("                       [7] Exponenciação")
+escreval("                       [8] Analisador de Numeros")
+escreval()
+escreval("Calculadora Desligada...")
+escreval("Ligar A calculadora[1] \Ou/ Sair da calculadora [2]!")
+escreval()
+leia(eae)
+se eae = "1" entao
+inicis()
+fimse
+se eae = "2" entao
+escreval("Calculadora Desligada...")
+fimse
+se (eae > "2") entao
+escreval("Opção inválida, Porfavor digíte uma válida!")
+leia(aa)
+fimse
+se (eae < "1") entao
+escreval("Opção inválida, Porfavor digíte uma válida!")
+leia(aa)
+fimse
+ate (eae = "1") ou (eae = "2")
+fimse
+fimprocedimento
+ procedimento iniciu()
+ inicio
+repita
+ LimpaTela
+ escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨|Ligar a Calculador? |¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+ ESCREVAL("                      |                    |  ")
+escreval("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨|LIGAR[1] NÃOLIGAR[0]|¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨")
+leia(Sim)
+se (sim= "1") entao
+inicis()
+senao
+fimse
+se(sim="0") entao
+escreval()
+escreval()
+escreval()
+escreval()
+escreval()
+escreval()
+escreval("                     Calculadora Inativa....")
+senao
+fimse
+se sim > "1" entao
+escreval()
+escreval("                         ERROR: NOT FOUND")
+escreval("             Opção inválida, Porfavor digíte uma válida!")
+leia(aa)
+fimse
+ate (sim = "1") ou (sim = "0")
+fimprocedimento
+inicio
+iniciu()
+fimalgoritmo
